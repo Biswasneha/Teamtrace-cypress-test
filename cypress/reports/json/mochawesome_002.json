@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-08T17:09:26.012Z",
+    "end": "2025-10-08T17:09:47.489Z",
+    "duration": 21477,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0485a337-bbc5-4000-bece-52742b68bead",
+      "title": "",
+      "fullFile": "cypress/e2e/login.cy.js",
+      "file": "cypress/e2e/login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cdf3fe5c-c91d-471a-9ff5-689dfc74de0d",
+          "title": "Visit a Web Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should load the page and verify basic elements",
+              "fullTitle": "Visit a Web Page should load the page and verify basic elements",
+              "timedOut": null,
+              "duration": 17206,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('login').then(data => {\n  console.log(data.validUser);\n  cy.visit('https://dev2.teamtrace.app/login');\n  cy.title().should('include', 'TeamTrace');\n  cy.get('input[placeholder=\"Enter Email\"]').type(data.validUser.email);\n  cy.get('#auth-login-v2-password').type(data.validUser.password);\n  cy.get('.d-flex > .MuiButtonBase-root').click();\n  cy.url().should('include', '/employee-dashboard');\n});",
+              "err": {},
+              "uuid": "3a4c8909-619f-4d33-a8c9-a00911224970",
+              "parentUUID": "cdf3fe5c-c91d-471a-9ff5-689dfc74de0d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3a4c8909-619f-4d33-a8c9-a00911224970"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17206,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}
