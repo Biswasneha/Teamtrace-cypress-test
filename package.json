@@ -1,0 +1,13 @@
+{
+  "name": "cypress-e2e-template",
+  "version": "1.0.0",
+  "description": "Template for Cypress E2E tests",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "cypress run --config video=false"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}

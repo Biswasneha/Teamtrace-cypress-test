@@ -1,0 +1,11 @@
+{
+  "validUser": {
+    "firstName": "John",
+    "lastName": "Derek",
+    "email": "john184@yopmail.com",
+    "password": "Code@1234",
+    "organizationName": "HelloWorldsw1",
+    "organizationLocation": "India",
+    "contactNumber": "9876043219"
+  }
+}
