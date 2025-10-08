@@ -5,10 +5,12 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test:e2e": "cypress run --config video=false"
+    "test:e2e": "cypress run --config video=false",
+    "merge-reports": "mochawesome-merge \"cypress/reports/json/*.json\" > cypress/reports/json/combined.json && marge cypress/reports/json/combined.json -f report -o cypress/reports/html"
   },
   "devDependencies": {
     "cypress": "^12.17.4",
+    "marge": "^1.0.1",
     "mochawesome": "^7.1.4",
     "mochawesome-merge": "^5.0.0",
     "mochawesome-report-generator": "^6.3.0"
