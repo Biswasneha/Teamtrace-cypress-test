@@ -33,7 +33,16 @@ cypress_e2e_template/
    npx cypress run
    ```
 
-3. **Run Cypress tests in interactive mode:**
+3. **Merge all JSON reports:**
+   ```
+   npx cypress run  
+   ```
+4. **Generate HTML report:**
+   ```
+   npm run generate-html
+   ```
+
+5. **Run Cypress tests in interactive mode:**
    ```
    npx cypress open
    ```
